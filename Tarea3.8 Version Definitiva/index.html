@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Germán Jaraiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6dace;
+        }
+        .navbar {
+            position: fixed;
+            width: 99%;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            
+        }
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            margin: auto;
+            padding: 20px;
+        }
+        .profile-about {
+            background-color: #e6c5a5;
+            text-align: justify;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        .profile-pic {
+            width: 10rem;
+            height: 10rem;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-left: 20px;
+            margin-right: 40px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .about {
+            color: black;
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 60%;
+        }
+        .section {
+            background-color: #e6c5a5;
+            padding: 20px;
+            height: 500px;
+            margin: 20px 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+
+        }
+
+        .studies {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .estudios {
+          text-align: center;
+          width: 50%;
+          margin: 2%;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            color: black;
+        }
+        .projectos {
+          text-align: center;
+          width: 50%;
+          margin: 2%;
+        }
+        .projectos p{
+          text-align: justify;
+          height: 35%;
+        }
+        .projectos img{
+          border-radius: 10px;
+          width: 100%;
+              width: 100%;
+              height: 200px; 
+              object-fit: cover; 
+              border-radius: 10px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+        }
+        .box {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            background-color: #e8d0b8;
+            max-width: 50%;
+            padding: 5%;
+            display: block;
+            margin: auto;
+        }
+		.idioma-boton {
+			width: 40px; 
+			height: 40px; 
+			padding: 5px; 
+			border: none;
+			background: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.idioma-boton img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover; 
+			border-radius: 5px; 
+		}
+		.links {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+		}
+
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    
+      <div class="navbar">
+          <div><a href="#">Germán Jaraiz</a></div>
+          <div class="links">
+              <a href="#sobre-mi">Sobre Mí</a>
+              <a href="#estudios">Estudios</a>
+              <a href="#proyectos">Proyectos</a>
+			   <button class="idioma-boton" onclick="cambiarIdioma()" style="max-height:100%; max-width:100%;">
+					<img id="icono-idioma" src="us-flag.png" alt="Change Language">
+			   </button>
+          </div>
+      </div>
+    <div class="box">
+        <div id="sobre-mi"></div>
+      <div class="container">
+          <div class="profile-about">
+              <div class="profile-pic">
+                <img src="Perfil.jpg" alt="Foto de perfil">
+              </div>
+              <section class="about">
+                  <h2 id="titulo-profesion"><b>Desarrollador de aplicaciones Web</b></h2>
+                  <p id="descripcion">Soy una persona trabajadora y proactiva que actualmente está buscando su primera experiencia laboral. Disfruto de diseñar y programar distintas apps y programas por mi cuenta. Mi objetivo de futuro es continuar formándome en campos como el BigData e IA.</p>
+              </section>
+          </div>
+          
+          <section id="estudios" class="section studies">
+              <div class="estudios">
+                  <h2 id="titulo-estudios">Cursando</h2>
+                  <hr style="border-width: 3px; border-color: black;">
+                  <h4 id="descripcion-estudios">Grado superior en desarrollo de aplicaciones web</h4>
+                  <p id="descripcion-lugar">I.E.S Hermanos Machado</p>
+                  <i style="font-size: 3rem;" class="fa-brands fa-java"></i>
+                  <i style="font-size: 3rem;" class="fa-brands fa-github"></i>
+                  <i style="font-size: 3rem;" class="fa-brands fa-docker"></i>
+                  <i style="font-size: 3rem;" class="fa-brands fa-python"></i>
+                  <i style="font-size: 3rem;" class="fa-solid fa-database"></i>
+                  <br>
+                  <i style="font-size: 3rem;" class="fa-brands fa-js"></i>
+                  <i style="font-size: 3rem;" class="fa-brands fa-html5"></i>
+                  <i style="font-size: 3rem;" class="fa-brands fa-css3-alt"></i>
+				  
+                  <br>
+
+              </div>
+              <div class="estudios">
+                  <h2 id="otras-titulaciones">Otras titulaciones</h2>
+                  <hr style="border-width: 3px; border-color: black;">
+                  <h4 id="bachillerato">Bachillerato de Ciencias Tecnológicas</h4>
+                  <p id="bachillerato-lugar">I.E.S Virgen de Valme</p>
+                  <hr style="border-color: #808080;">
+                  <h4 id="ingles">Titulo Ingles C1</h4>
+                  <p id="ingles-lugar">Cambridge Assessment English</p>
+                  <hr style="border-color: #808080;">
+                  <h4 id="inmersion">Certificado Inmersion linguistica en el extrangero</h4>
+                  <p id="inmersion-lugar">Programa de Churchill House (1mes)</p>
+                  <hr style="border-color: #808080;">
+                  <h4 id="makeaton">Reconocimiento a la participación en el Smart Green Island Makeathon</h4>
+                  <p id="makeaton-lugar">ITQ GmbH & Dr. Stetter ITQ S.L.U.</p>
+
+              </div>
+          </section>
+          
+          <section id="proyectos" class="section projects">
+              <div class="projectos">
+                  <h2>Rogue Like </h2>
+                  <p id="roguelike">Pequeño juego de escritorio con estilo rogue like donde podrás tomar distintas acciones por turnos, con algo de aleatoriedad con sistema de dados d20 como en D&D. Durante las rondas el jugador ira ganando oro que podrá gastar para incrementar sus estadísticas y enfrentarse a oleadas de monstruos cada vez mas fuertes.</p>
+                  <img src="roguelike.jpg" alt="">
+                </div>
+              <div class="projectos">
+                  <h2>Deal Express</h2>
+                  <p id="dealexpres">Aplicación web desarrollada con el framework de Django. La aplicación consiste en un marketplace donde los usuarios se podrán registrar, comprar, o en el caso de que decidan registrarse como empresas, podrán poner en venta sus productos al publico.</p>
+                  <img src="dealexpres.png" alt="">
+                </div>
+          </section>
+      </div>
+    </div>
+    <footer class="footer">
+        <p id="social">Contacto</p>
+        <p>gjaraizm@gmail.com | Teléfono: +34 606 64 84 27</p>
+    </footer>
+<script>
+    let idioma = "es"; 
+
+    function cambiarIdioma() {
+        if (idioma === "es") {
+            document.getElementById("titulo-profesion").innerHTML = "<b>Web Application Developer</b>";
+            document.getElementById("descripcion").innerHTML = "I am a hardworking and proactive person currently looking for my first work experience. I enjoy designing and programming different apps and programs on my own. My future goal is to continue training in fields such as Big Data and AI.";
+
+            document.getElementById("titulo-estudios").innerHTML = "Currently Studying";
+            document.getElementById("descripcion-estudios").innerHTML = "Higher Grade Vocational studies in Web Application Development";
+            document.getElementById("descripcion-lugar").innerHTML = "I.E.S Hermanos Machado.";
+
+            document.getElementById("otras-titulaciones").innerHTML = "Other Degrees";
+            document.getElementById("bachillerato").innerHTML = "Technological Sciences Baccalaureate";
+            document.getElementById("bachillerato-lugar").innerHTML = "I.E.S Virgen de Valme";
+            document.getElementById("ingles").innerHTML = "English C1 Certificate";
+            document.getElementById("ingles-lugar").innerHTML = "Cambridge Assessment English";
+            document.getElementById("inmersion").innerHTML = "Foreign Language Immersion Certificate";
+            document.getElementById("inmersion-lugar").innerHTML = "Churchill House Program (1 month)";
+            document.getElementById("makeaton").innerHTML = "Recognition for participation in the Smart Green Island Makeathon";
+            document.getElementById("makeaton-lugar").innerHTML = "ITQ GmbH & Dr. Stetter ITQ S.L.U.";
+
+            document.getElementById("roguelike").innerHTML = "A small desktop game with a rogue-like style where you can take different actions per turn, with some randomness using a d20 dice system like in D&D. During the rounds, the player will earn gold that can be spent to increase their stats and face increasingly stronger waves of monsters.";
+            document.getElementById("dealexpres").innerHTML = "A web application developed with the Django framework. The application consists of a marketplace where users can register, buy, or, if they choose to register as companies, they can sell their products to the public.";
+
+            document.getElementById("social").innerHTML = "Contact";
+            document.getElementById("icono-idioma").src = "spain-flag.png"; 
+            document.getElementById("icono-idioma").alt = "Cambiar a Español";
+
+            idioma = "en"; 
+        } else {
+            document.getElementById("titulo-profesion").innerHTML = "<b>Desarrollador de aplicaciones Web</b>";
+            document.getElementById("descripcion").innerHTML = "Soy una persona trabajadora y proactiva que actualmente está buscando su primera experiencia laboral. Disfruto de diseñar y programar distintas apps y programas por mi cuenta. Mi objetivo de futuro es continuar formándome en campos como el BigData e IA.";
+
+            document.getElementById("titulo-estudios").innerHTML = "Cursando";
+            document.getElementById("descripcion-estudios").innerHTML = "Grado superior en desarrollo de aplicaciones web";
+            document.getElementById("descripcion-lugar").innerHTML = "I.E.S Hermanos Machado";
+
+            document.getElementById("otras-titulaciones").innerHTML = "Otras titulaciones";
+            document.getElementById("bachillerato").innerHTML = "Bachillerato de Ciencias Tecnológicas";
+            document.getElementById("bachillerato-lugar").innerHTML = "I.E.S Virgen de Valme";
+            document.getElementById("ingles").innerHTML = "Título Inglés C1";
+            document.getElementById("ingles-lugar").innerHTML = "Cambridge Assessment English";
+            document.getElementById("inmersion").innerHTML = "Certificado Inmersión lingüística en el extranjero";
+            document.getElementById("inmersion-lugar").innerHTML = "Programa de Churchill House (1 mes)";
+            document.getElementById("makeaton").innerHTML = "Reconocimiento a la participación en el Smart Green Island Makeathon";
+            document.getElementById("makeaton-lugar").innerHTML = "ITQ GmbH & Dr. Stetter ITQ S.L.U.";
+
+            document.getElementById("roguelike").innerHTML = "Pequeño juego de escritorio con estilo rogue like donde podrás tomar distintas acciones por turnos, con algo de aleatoriedad con sistema de dados d20 como en D&D. Durante las rondas el jugador ira ganando oro que podrá gastar para incrementar sus estadísticas y enfrentarse a oleadas de monstruos cada vez más fuertes.";
+            document.getElementById("dealexpres").innerHTML = "Aplicación web desarrollada con el framework de Django. La aplicación consiste en un marketplace donde los usuarios se podrán registrar, comprar, o en el caso de que decidan registrarse como empresas, podrán poner en venta sus productos al público.";
+
+            document.getElementById("social").innerHTML = "Contacto";
+            document.getElementById("icono-idioma").src = "us-flag.png"; 
+            document.getElementById("icono-idioma").alt = "Change to English";
+
+            idioma = "es"; 
+        }
+    }
+</script>
+
+</body>
+</html>
